@@ -8,8 +8,22 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const dataObject = [
+  {
+    name: 'Elder',
+    desc: 'Great bit of metal',
+  },
+  {
+    name: 'Stone',
+    desc: 'Solid bit of metal',
+  },
+];
+
 const Home = () => (<Container>
-  <OutlinedCard title={'Hello World!'} content={'This text goes here!'}/>
+
+  {dataObject.map((server, i) => (<OutlinedCard key={i}
+                          title={server.name}
+                          content={server.desc}/>))}
 </Container>);
 
 export default Home;
