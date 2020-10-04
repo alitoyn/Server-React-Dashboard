@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import OutlinedCard from '../components/OutlinedCard.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Home = () => (<Container>
-  <div>Hello World!</div>
+  <OutlinedCard title={'Hello World!'} content={'This text goes here!'}/>
 </Container>);
 
 export default Home;
