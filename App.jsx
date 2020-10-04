@@ -8,21 +8,23 @@ import {
     Link,
 } from 'react-router-dom';
 import Home from './pages/Home.jsx';
+import ButtonAppBar from './components/ButtonAppBar.jsx';
 
-const Container = styled.div`
+const BackgroundContainer = styled.div`
   background-color:  #a675a1ff;
 `;
 
 const App = () => (
-    <Container>
+    <BackgroundContainer>
         <Router>
+            <ButtonAppBar />
             <Switch>
                 <Route path='/'>
                     <Home />
                 </Route>
             </Switch>
         </Router>
-    </Container>
+    </BackgroundContainer>
 );
 
 export default App;
