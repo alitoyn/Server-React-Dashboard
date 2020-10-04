@@ -24,6 +24,7 @@ const Home = () => (<Container>
   {dataObject.map((server, i) => (<OutlinedCard key={i}
                           title={server.name}
                           content={server.desc}/>))}
-</Container>);
+</Container>
+);
 
 export default Home;
